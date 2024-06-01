@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/f3238577c7.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+      <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span> Sagar Ravandale </span></h1>
+            </div>
+        </div>
+      </div>
+
+      <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A Full Stack Developer who is creative and proficient in understanding user requirements and creating
+                        customized software solutions. Proficient in various programming languages and skilled at keeping up with
+                        industry developments. Skilled in both back-end and front-end development, proficient in managing all aspects
+                        of the development process. Our goal is to develop strong and reliable applications and systems, showcasing our
+                        adaptability and proactive attitude towards resolving issues.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Achievements')">Achievements</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX </span><br>Specializing in UI/UX design, I create intuitive and engaging <br> interfaces that enhance the overall user experience.</li>
+                            <li><span>Web Development </span><br>As a web developer, I build responsive, <br> high-performance websites using the latest technologies and best practices.</li>
+                            <li><span>Cloud Computing </span><br>Designing and managing cloud infrastructure. <br> Utilizing specific cloud services for application development.</li>                        
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2025 </span><br>B.E. Information Technology, <br> Vidya Pratishthan's Kamalnayan Bajaj Institute of Engineering and Technology, Baramati</li>
+                            <li><span>2019-2022 </span><br>Diploma in Computer Engineering, <br> Government Polytechnic, Dhule</li>
+                            <li><span>2018-2019 </span><br>SSC (Maharashtra Board), <br> Jai-Hind Highschool, Dhule</li>                       
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Achievements" >
+                        <ul>
+                            <li><span>Certificate of Merit - EY & Edunet Foundation </span><br>Securing a position among top 37 projects of EY Global delivery services led 6-week internship in Collaboration with AICTE</li>
+                            <li><span>Volunteer </span><br>Code Crafters hackathon, arranged at GP Dhule. </li>
+                                                   
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-laptop-code"></i>
+                    <h2>Web Design</h2>
+                    <p>In my web development services, I design and build custom websites that prioritize user experience and functionality.
+                        Utilizing modern technologies and best practices, I create responsive and visually appealing digital solutions tailored to your needs. 
+                        From concept to deployment, I'm dedicated to delivering high-quality websites that elevate your online presence.</p>
+                    <a href="https://github.com/sagarravandale07/Web-Development" target="_blank">Learn more...</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-figma"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>In my UI/UX design services, I specialize in crafting intuitive and visually compelling user interfaces. 
+                        Through user-centered research and iterative design processes, I create seamless experiences that captivate and engage users. 
+                        From wireframes to prototypes, I prioritize usability and aesthetics to ensure your digital products resonate with your audience.</p>
+                    <a href="https://github.com/sagarravandale07/UI-UX-Design-Figma" target="_blank">Learn more...</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Cloud Computing</h2>
+                    <p>In my cloud computing services, I focus on designing and managing scalable cloud infrastructures tailored to your needs. 
+                        From initial setup to ongoing optimization, I ensure reliable performance and security for your applications and data. 
+                        Let me streamline your operations and maximize efficiency with customized cloud solutions.</p><br>
+                    <a href="#">Learn more...</a>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work11.jpg" alt="work1">
+                    <div class="layer">
+                        <h3>Car Rental Application</h3>
+                        <p>The web app gives facility to rent a car,
+                            and offers pay as you go service.</p>
+                        <a href="https://carzest.pythonanywhere.com/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png" alt="work2">
+                    <div class="layer">
+                        <h3>Fitness Tracker App Design</h3>
+                        <p>The fitness app UI design that is flexible and Responsive. 
+                            Created by using figma.</p>
+                        <a href="https://www.figma.com/proto/A7RHg2Ki8pMGcmKvdCtwhd/Fitness-Tracker-App-Design?node-id=10-55&t=9RR6CWFAoVV7YdmY-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=10%3A55" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png" alt="work3">
+                    <div class="layer">
+                        <h3>Food Order & Delivery System </h3>
+                        <p>Website for ordering food at your fingertips,
+                            Provides Hassle-free food ordering and delivery system.</p>
+                        <a href="https://goldenrestro.000webhostapp.com/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>           
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+      </div>
+
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-regular fa-envelope"></i> sagarravandale07@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> +91 8329289964</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sagar-ravandale/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/_sagarrr07?igsh=enV1cjI4a2ZoNWVm" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/sagar_ravandale?t=WtcFK08R9PriGnTx5MwDKg&s=09" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="images/Sagar Ravandale Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" placeholder="Your Name" name="Name" required>
+                        <input type="email" placeholder="Your Email" name="Email" required>
+                        <textarea name="Message" placeholder="Your Message" rows="6" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"> </span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Sagar Ravandale. <br> <i class="fa-solid fa-registered"></i> All rights reserved.</p>
+        </div>
+      </div>
+
+      <script type="text/javascript">
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu()
+        {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu()
+        {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxe5khjs3pypm7todhAv5_h7mUi8BpN0nVF4MeL6QiZkO3HnsmB57VVh0xbNVJtXzkh/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const mag = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent Sucessfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
